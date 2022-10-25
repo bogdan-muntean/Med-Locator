@@ -1,9 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './style/style.css'
+import Navbar from './Components/Navbar'
+import SearchBar from './Components/SearchBar'
 
 function App(){
-  // Navbar 
+  return(
+    <div className='app'>
+      <Navbar/>
+      <SearchBar/>
+    </div>
+  )
+ 
   // Container 
   //   Bara de cautare 
   //   Optiune sa selectezi orasul si specializarea
@@ -12,7 +18,7 @@ function App(){
   //   Date de contact 
   //   Optine sa te programezi prin site, se deschide calendar unde poate selecta ziua si ora 
   //   Optiune de trimitere mail instant cu un form
-
+  
 }
 
 export default App

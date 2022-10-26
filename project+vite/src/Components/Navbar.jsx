@@ -3,7 +3,7 @@ import medicalLogo from "./../images/medical-logo.jpg";
 
 const Navbar = () => {
   return (
-    <div className="container-navbar">
+    <div className="container-navbar grayscale">
       <img src={medicalLogo}></img>
       <div>
         <a src="#">Acasa</a>

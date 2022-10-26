@@ -1,23 +1,21 @@
-:root{
-    width: 100%;
-    height: 100%;
-    //Variables
-    --color-A: #273142;
-    --color-B: #00bdc9;
-    --color-C: #E8ECFF;
-    --color-D: #3a78bc;
-    --color-background: #f9fefe;
-    --color-btn-icon: #5898dd;
-    --color-containers: #f7fafd;
+:root {
+  width: 100%;
+  height: 100%;
+  //Variables
+  --color-A: #273142;
+  --color-B: #00bdc9;
+  --color-C: #e8ecff;
+  --color-D: #3a78bc;
+  --color-background: #f9fefe;
+  --color-btn-icon: #5898dd;
+  --color-containers: #f7fafd;
 }
 body {
   background-color: var(--color-background);
   overflow-x: hidden;
 }
 
-//Methods 
-
-
+//Methods
 
 //Components
 // 1. Navbar
@@ -31,16 +29,21 @@ body {
   margin-left: -13px;
   display: flex;
   div {
+    right: 20px;
+    position: fixed;
     align-items: center;
     display: flex;
+    align-self: center;
+
     a {
       width: auto;
       padding: 6px;
-    //   border: 1px solid black;
+      //   border: 1px solid black;
       margin-left: 15px;
       border-radius: 10px;
       display: flex;
       align-items: center;
+
       :hover {
         background-color: aliceblue;
       }
@@ -58,36 +61,35 @@ body {
 }
 
 //2. SearchBar
-.container-search-bar{
-    width: 105%;
-    height: 500px;
-    margin-top: 10px;
-    margin-left: -10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: padding-box;
-    // background-size: 1200px 500px;
-    // background-size: center center;
-    background-size: cover;
-    opacity: 0.8;
+.container-search-bar {
+  width: 105%;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: -10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  // background-size: 1200px 500px;
+  // background-size: center center;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search-bar {
+    width: 120vh;
+    height: 300px;
+    // background-color: var(--color-A);
+    color: white;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    .search-bar{
-        width: 120vh;
-        height: 300px;
-        // background-color: var(--color-A);
-        color: white;
-        border-radius: 25px;
-        display: flex;
-        justify-content: center;
-        // margin-top: 15%;
-        opacity: 0.9;
-        outline: 2px solid white;
-        h3{
-            opacity: 1
-        }
+    // margin-top: 15%;
+    opacity: 0.9;
+    outline: 2px solid white;
+    h3 {
+      opacity: 1;
     }
+  }
 }
-

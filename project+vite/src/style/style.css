@@ -3,7 +3,7 @@
   height: 100%;
   --color-A: #273142;
   --color-B: #00bdc9;
-  --color-C: #E8ECFF;
+  --color-C: #e8ecff;
   --color-D: #3a78bc;
   --color-background: #f9fefe;
   --color-btn-icon: #5898dd;
@@ -30,12 +30,16 @@ body {
 }
 
 .container-navbar div {
+  right: 20px;
+  position: fixed;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .container-navbar div a {

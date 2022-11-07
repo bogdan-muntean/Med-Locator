@@ -21,37 +21,37 @@ const SearchBar = () => {
         <div>
           <span>Creaza un cont pe YourSpecialist sau Logheaza-te acum</span>
         </div>
-        <div>
+        <div className="small-div">
           <span>Locuri de munca pentru doctori</span>
         </div>
       </div>
       <div className="search-doctor">
-        <h3>Cauti un doctor/dentist?</h3>
-        <h1>Cauti un doctor/dentist?</h1>
+        {/* <h3>Cauti un doctor/dentist?</h3> */}
+        <h1>Cauta un doctor/dentist</h1>
         <form>
-          <label for="specialist">Caut un*</label>
+          {/* <label for="specialist">Caut un*</label> */}
           <select id="specialist" name="specialist">
-            <option value="none">Specialist...</option>
+            <option value="none">Specialist</option>
             <option value="doctor">Doctor</option>
             <option value="dentist">Dentist</option>
           </select>
-          <label for="oras">Oras</label>
+          {/* <label for="oras">Oras</label> */}
           <select id="oras" name="oras">
-            <option value="none">Oras...</option>
+            <option value="none">Oras</option>
             <option value=""></option>
             <option value=""></option>
           </select>
-          <label for="specialitate">Specialitate</label>
+          {/* <label for="specialitate">Specialitate</label> */}
           <select id="specialitate" name="specialitate">
-            <option value="none">Alege specialitatea...</option>
+            <option value="none">Alege specialitatea</option>
             <option value=""></option>
             <option value=""></option>
           </select>
-          <label for="prenume">Prenume</label>
-          <input id="prenume" name="prenume"></input>
-          <label for="nume">Nume</label>
-          <input id="nume" name="nume"></input>
-          
+          {/* <label for="prenume">Prenume</label> */}
+          <input id="prenume" name="prenume" placeholder="Prenume"></input>
+          {/* <label for="nume">Nume</label> */}
+          <input id="nume" name="nume" placeholder="Nume"></input>
+          <button type="submit">Cauta</button>
         </form>
       </div>
     </div>

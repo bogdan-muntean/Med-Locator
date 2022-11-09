@@ -1,19 +1,20 @@
 import './style/style.css'
 import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
+import Footer from './Components/Footer'
+import ResultsContainer from './Components/ResultContainer'
 
 function App(){
   return(
     <div className='app'>
       <Navbar/>
       <SearchBar/>
+      <ResultsContainer/>
+      <Footer/>
     </div>
   )
  
   // Container 
-  //   Bara de cautare 
-  //   Optiune sa selectezi orasul si specializarea
-  // Container pentru rezultate
   //   Detaliile medicului 
   //   Date de contact 
   //   Optine sa te programezi prin site, se deschide calendar unde poate selecta ziua si ora 

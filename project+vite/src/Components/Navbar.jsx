@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
                         
             <div className="top-phone">
-              <a href="tel:0264948299">0264948299</a>
+              <a href="tel:0264948299">021 409 3294</a>
             </div>
           </div>
           <div className="col2" id="div-col2">

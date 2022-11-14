@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 import Footer from './Components/Footer'
 import ResultsContainer from './Components/ResultContainer'
+import About from './Components/About'
 
 function App(){
   return(
@@ -10,6 +11,7 @@ function App(){
       <Navbar/>
       <SearchBar/>
       <ResultsContainer/>
+      <About/>
       <Footer/>
     </div>
   )

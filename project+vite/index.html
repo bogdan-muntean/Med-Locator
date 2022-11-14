@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="icon" type="image/x-icon" href="./src/images/medical-logo.jpg">    
+    <link href="./src/images/fontawesome-icons/css/all.css" rel="stylesheet">
+    <title>YourSpecialist</title>
   </head>
   <body>
     <div id="root"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script> 
+    <script>  
+      function Map123() {  
+        var mapOptions = {  
+          center:new google.maps.LatLng(44.421140428354924, 26.0892382149207),  
+          zoom: 10,  
+          mapTypeId: google.maps.MapTypeId.HYBRID  
+      }  
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+    }  
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

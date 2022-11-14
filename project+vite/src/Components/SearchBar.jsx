@@ -10,7 +10,7 @@ const SearchBar = () => {
       className="container-search-bar"
       style={{ backgroundImage: `url(${background4})` }}
     >
-      <div className="info-text">
+      <div className="info-text"> 
         <p>
           Bine ai venit sa gasesti un doctor.<br></br>
           <span>

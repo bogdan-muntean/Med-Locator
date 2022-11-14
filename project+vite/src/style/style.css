@@ -266,7 +266,7 @@ body {
 .container-search-bar .info-text div {
   display: inline-block;
   width: 680px;
-  border-radius: 4px;
+  border-radius: 19px;
   text-align: center;
   font-size: 22px;
   padding: 10px 50px;
@@ -492,6 +492,47 @@ body {
   margin-top: 50px;
 }
 
+.about-section {
+  background: url(../images/dentist1.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: whitesmoke;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.about-section .text-container {
+  width: 55%;
+  float: right;
+  background-color: white;
+  padding: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-section .text-container h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about-section .text-container .text {
+  font-size: 13px;
+  color: #817979;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.about-section .text-container .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .container-footer {
   width: 105%;
   left: -8px;
@@ -546,6 +587,12 @@ body {
   width: 300px;
   background: green;
   margin: auto 0px;
+}
+
+.container-footer .container-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .container-footer .contact-information {

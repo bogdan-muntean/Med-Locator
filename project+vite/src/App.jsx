@@ -3,15 +3,15 @@ import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 import Footer from './Components/Footer'
 import ResultsContainer from './Components/ResultContainer'
-import About from './Components/About'
 
 function App(){
+  // const [display, setDisplay] = useState("ResultDefault");
+
   return(
     <div className='app'>
       <Navbar/>
       <SearchBar/>
       <ResultsContainer/>
-      <About/>
       <Footer/>
     </div>
   )

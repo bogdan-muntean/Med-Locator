@@ -492,6 +492,86 @@ body {
   margin-top: 50px;
 }
 
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 9));
+            transform: translateX(calc(-250px * 9));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 9));
+            transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slider {
+  height: 250px;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: auto auto;
+  position: relative;
+}
+
+.slider::before, .slider::after {
+  background: -webkit-gradient(linear, right whitesmoke 0%, to(#322f2f));
+  background: linear-gradient(to right whitesmoke 0%, #322f2f 100%);
+  content: ' ';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider .slider-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 18);
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+
+.slider .slider-track:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.slider .slider-track .slide {
+  height: 200px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.slider .slider-track .slide img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.slider .slider-track .slide img:hover {
+  padding: 40px;
+}
+
 .about-section {
   background: url(../images/dentist1.jpg) no-repeat left;
   background-size: 55%;

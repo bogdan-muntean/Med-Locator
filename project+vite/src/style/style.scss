@@ -386,6 +386,57 @@ body {
     }
   }
 }
+@keyframes scroll{
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(calc(-250px * 9))
+  }
+}
+
+.slider{
+  height: 250px;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  margin: auto auto;
+  position: relative;
+  &::before, &::after {
+    background: linear-gradient(
+      to right whitesmoke 0%,
+      rgb(50, 47, 47) 100%,
+      );
+      content: ' ';
+      height: 100%;
+      position: absolute;
+      width: 15%;
+      z-index: 2;
+  }
+  .slider-track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+    .slide {
+      height: 200px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      img {
+        width: 100%;
+        // height: 200px;
+        transition: transform 1s;
+        &:hover {
+          padding: 40px;
+        }
+      }
+    }
+  }
+}
 
 //4. About section
 .about-section {
